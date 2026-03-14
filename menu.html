@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メニュー - モダンカフェ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-page {
+            padding: 60px 0;
+        }
+
+        .menu-page h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #8B4513;
+            margin-bottom: 3rem;
+        }
+
+        .menu-category {
+            margin-bottom: 3rem;
+        }
+
+        .menu-category h2 {
+            font-size: 1.8rem;
+            color: #D2691E;
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-detail-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #D2691E;
+        }
+
+        .menu-detail-item h3 {
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .menu-detail-item p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .menu-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #D2691E;
+            margin-top: 0.5rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 10px 20px;
+            background: #8B4513;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #D2691E;
+        }
+    </style>
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">☕ Modern Cafe</div>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="menu.html">メニュー</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- メニューページコンテンツ -->
+    <div class="container menu-page">
+        <a href="index.html" class="back-button">← ホームに戻る</a>
+        
+        <h1>🍽️ 全メニュー</h1>
+
+        <!-- コーヒー類 -->
+        <div class="menu-category">
+            <h2>☕ コーヒー</h2>
+            <div class="menu-list">
+                <div class="menu-detail-item">
+                    <h3>スペシャルブレンド</h3>
+                    <p>当店こだわりの豆をブレンドした、バランスの取れた一杯。毎日焙煎しています。</p>
+                    <div class="menu-price">¥700</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>シングルオリジン</h3>
+                    <p>エチオピア、ケニア、コロンビアなど、毎月異なる単一農園の豆を厳選。</p>
+                    <div class="menu-price">¥800</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>アイスコーヒー</h3>
+                    <p>冷たくても香りが引き立つ、深煎りコーヒー。夏の定番です。</p>
+                    <div class="menu-price">¥750</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>カフェラテ</h3>
+                    <p>濃厚なエスプレッソとスチームミルクのハーモニー。</p>
+                    <div class="menu-price">¥850</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>カプチーノ</h3>
+                    <p>エスプレッソ、スチームミルク、フォームミルクの黄金比。</p>
+                    <div class="menu-price">¥850</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>カフェモカ</h3>
+                    <p>コーヒーとチョコレートの甘い誘い。</p>
+                    <div class="menu-price">¥900</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 紅茶・その他ドリンク -->
+        <div class="menu-category">
+            <h2>🫖 紅茶・その他ドリンク</h2>
+            <div class="menu-list">
+                <div class="menu-detail-item">
+                    <h3>アッサムティー</h3>
+                    <p>インド産の濃厚な紅茶。コクと深みが特徴です。</p>
+                    <div class="menu-price">¥650</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>アールグレイ</h3>
+                    <p>ベルガモットの香りが心地よい、クラシックな紅茶。</p>
+                    <div class="menu-price">¥650</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>ホットチョコレート</h3>
+                    <p>濃厚でなめらかなホットチョコレート。冬の定番。</p>
+                    <div class="menu-price">¥750</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>フレッシュオレンジジュース</h3>
+                    <p>毎日搾りたての新鮮なオレンジジュース。</p>
+                    <div class="menu-price">¥700</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>スムージー（季節限定）</h3>
+                    <p>旬のフルーツを使ったヘルシースムージー。毎月メニューが変わります。</p>
+                    <div class="menu-price">¥800</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>アイスティー</h3>
+                    <p>爽やかなアイスティー。暑い日にぴったり。</p>
+                    <div class="menu-price">¥600</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- フード -->
+        <div class="menu-category">
+            <h2>🥐 フード</h2>
+            <div class="menu-list">
+                <div class="menu-detail-item">
+                    <h3>クロワッサン</h3>
+                    <p>毎朝焼きたての、サクサクのクロワッサン。バターの香りが最高。</p>
+                    <div class="menu-price">¥400</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>チョコレートクロワッサン</h3>
+                    <p>クロワッサンの中にチョコレートが隠れています。</p>
+                    <div class="menu-price">¥450</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>デニッシュペストリー</h3>
+                    <p>層状の生地にジャムやクリームをのせた、見た目も美しいペストリー。</p>
+                    <div class="menu-price">¥500</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>スコーン</h3>
+                    <p>イギリス発祥のスコーン。クロテッドクリームとジャム付き。</p>
+                    <div class="menu-price">¥550</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>サンドイッチ</h3>
+                    <p>新鮮な野菜とハムを使ったボリュームサンドイッチ。</p>
+                    <div class="menu-price">¥900</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>キッシュ</h3>
+                    <p>季節野菜とチーズを使ったフランス風キッシュ。</p>
+                    <div class="menu-price">¥850</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- デザート -->
+        <div class="menu-category">
+            <h2>🍰 デザート</h2>
+            <div class="menu-list">
+                <div class="menu-detail-item">
+                    <h3>チーズケーキ</h3>
+                    <p>濃厚でクリーミーなニューヨークチーズケーキ。</p>
+                    <div class="menu-price">¥600</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>ショコラケーキ</h3>
+                    <p>チョコレート好きのための、濃厚なチョコレートケーキ。</p>
+                    <div class="menu-price">¥650</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>ティラミス</h3>
+                    <p>イタリアンデザートの定番。マスカルポーネチーズとココアが絶妙。</p>
+                    <div class="menu-price">¥600</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>フルーツタルト</h3>
+                    <p>季節の新鮮なフルーツがたっぷり。見た目も華やか。</p>
+                    <div class="menu-price">¥700</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>パネットーーネ（季節限定）</h3>
+                    <p>クリスマスシーズンの定番イタリアンケーキ。</p>
+                    <div class="menu-price">¥800</div>
+                </div>
+                <div class="menu-detail-item">
+                    <h3>マカロン</h3>
+                    <p>フランス発祥の可愛らしいお菓子。毎日異なる味が登場。</p>
+                    <div class="menu-price">¥300</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">← ホームに戻る</a>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
