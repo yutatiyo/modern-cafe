@@ -5,103 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メニュー - モダンカフェ</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .menu-page {
-            padding: 60px 0;
-        }
-
-        .menu-page h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #8B4513;
-            margin-bottom: 3rem;
-        }
-
-        .menu-category {
-            margin-bottom: 3rem;
-        }
-
-        .menu-category h2 {
-            font-size: 1.8rem;
-            color: #D2691E;
-            border-bottom: 3px solid #D2691E;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .menu-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .menu-detail-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid #D2691E;
-        }
-
-        .menu-detail-item h3 {
-            color: #8B4513;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .menu-detail-item p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.5;
-        }
-
-        .menu-price {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #D2691E;
-            margin-top: 0.5rem;
-        }
-
-        .back-button {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 10px 20px;
-            background: #8B4513;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .back-button:hover {
-            background: #D2691E;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ナビゲーションバー -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">☕ Modern Cafe</div>
+            <div class="logo"><a href="index.html">Modern Cafe</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- メニューページコンテンツ -->
-    <div class="container menu-page">
+    <div class="container menu-page section-padding">
         <a href="index.html" class="back-button">← ホームに戻る</a>
         
-        <h1>🍽️ 全メニュー</h1>
+        <h1>全メニュー</h1>
 
         <!-- コーヒー類 -->
         <div class="menu-category">
-            <h2>☕ コーヒー</h2>
-            <div class="menu-list">
+            <h2><i class="fas fa-coffee"></i> コーヒー</h2>
+            <div class="menu-list-detail">
                 <div class="menu-detail-item">
                     <h3>スペシャルブレンド</h3>
                     <p>当店こだわりの豆をブレンドした、バランスの取れた一杯。毎日焙煎しています。</p>
@@ -137,8 +71,8 @@
 
         <!-- 紅茶・その他ドリンク -->
         <div class="menu-category">
-            <h2>🫖 紅茶・その他ドリンク</h2>
-            <div class="menu-list">
+            <h2><i class="fas fa-tea"></i> 紅茶・その他ドリンク</h2>
+            <div class="menu-list-detail">
                 <div class="menu-detail-item">
                     <h3>アッサムティー</h3>
                     <p>インド産の濃厚な紅茶。コクと深みが特徴です。</p>
@@ -174,8 +108,8 @@
 
         <!-- フード -->
         <div class="menu-category">
-            <h2>🥐 フード</h2>
-            <div class="menu-list">
+            <h2><i class="fas fa-bread-slice"></i> フード</h2>
+            <div class="menu-list-detail">
                 <div class="menu-detail-item">
                     <h3>クロワッサン</h3>
                     <p>毎朝焼きたての、サクサクのクロワッサン。バターの香りが最高。</p>
@@ -211,8 +145,8 @@
 
         <!-- デザート -->
         <div class="menu-category">
-            <h2>🍰 デザート</h2>
-            <div class="menu-list">
+            <h2><i class="fas fa-cake-candles"></i> デザート</h2>
+            <div class="menu-list-detail">
                 <div class="menu-detail-item">
                     <h3>チーズケーキ</h3>
                     <p>濃厚でクリーミーなニューヨークチーズケーキ。</p>
@@ -234,7 +168,7 @@
                     <div class="menu-price">¥700</div>
                 </div>
                 <div class="menu-detail-item">
-                    <h3>パネットーーネ（季節限定）</h3>
+                    <h3>パネットーネ（季節限定）</h3>
                     <p>クリスマスシーズンの定番イタリアンケーキ。</p>
                     <div class="menu-price">¥800</div>
                 </div>
@@ -251,7 +185,14 @@
 
     <!-- フッター -->
     <footer class="footer">
-        <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

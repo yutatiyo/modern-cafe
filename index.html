@@ -5,64 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>モダンカフェ - Modern Cafe</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ナビゲーションバー -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">☕ Modern Cafe</div>
+            <div class="logo"><a href="index.html">Modern Cafe</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- ヒーローセクション -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Modern Cafe へようこそ</h1>
             <p>上質なコーヒーと居心地の良い空間</p>
-            <a href="menu.html" class="cta-button" style="display: inline-block; text-decoration: none; color: white;">メニューを見る</a>
+            <a href="menu.html" class="cta-button">メニューを見る</a>
         </div>
     </section>
 
     <!-- メニューセクション -->
-    <section class="menu">
+    <section class="menu section-padding">
         <div class="container">
             <h2>おすすめメニュー</h2>
             <div class="menu-grid">
                 <div class="menu-item">
-                    <div class="menu-icon">☕</div>
+                    <img src="images/latte.jpg" alt="スペシャルコーヒー" class="menu-item-image">
                     <h3>スペシャルコーヒー</h3>
                     <p>厳選された豆を使用した、香り高いコーヒー</p>
                     <span class="price">¥800</span>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-icon">🥐</div>
-                    <h3>フレッシュペストリー</h3>
-                    <p>毎日焼きたての焼き菓子</p>
-                    <span class="price">¥500</span>
+                    <img src="images/iced-tea.jpg" alt="フレッシュティー" class="menu-item-image">
+                    <h3>フレッシュティー</h3>
+                    <p>季節のフルーツを使った爽やかなティー</p>
+                    <span class="price">¥700</span>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-icon">🍰</div>
-                    <h3>デザート</h3>
-                    <p>季節ごとの特別なデザート</p>
+                    <img src="images/cake.jpg" alt="季節のデザート" class="menu-item-image">
+                    <h3>季節のデザート</h3>
+                    <p>パティシエ特製の、見た目も美しいデザート</p>
                     <span class="price">¥600</span>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-icon">🥤</div>
-                    <h3>スムージー</h3>
-                    <p>新鮮なフルーツを使ったヘルシードリンク</p>
-                    <span class="price">¥700</span>
+                    <img src="images/sandwich.jpg" alt="クラブサンドイッチ" class="menu-item-image">
+                    <h3>クラブサンドイッチ</h3>
+                    <p>新鮮な野菜と具材たっぷりのボリューム満点サンド</p>
+                    <span class="price">¥950</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- アバウトセクション -->
-    <section class="about">
+    <section class="about section-padding">
         <div class="container">
             <h2>モダンカフェについて</h2>
             <div class="about-content">
@@ -83,22 +91,29 @@
     </section>
 
     <!-- コンタクトセクション -->
-    <section class="contact">
+    <section class="contact section-padding">
         <div class="container">
             <h2>お問い合わせ</h2>
             <div class="contact-info">
                 <p><strong>住所：</strong> 東京都渋谷区モダン1-1-1</p>
-                <p><strong>電話：</strong> 03-XXXX-XXXX</p>
+                <p><strong>電話：：</strong> 03-XXXX-XXXX</p>
                 <p><strong>営業時間：</strong> 平日 7:00-20:00 / 土日 8:00-21:00</p>
                 <p><strong>定休日：</strong> 月曜日</p>
-                <p style="margin-top: 1rem;"><a href="contact.html" style="color: #D2691E; text-decoration: none; font-weight: bold;">詳しい情報・お問い合わせはこちら →</a></p>
+                <p class="contact-link"><a href="contact.html">詳しい情報・お問い合わせはこちら →</a></p>
             </div>
         </div>
     </section>
 
     <!-- フッター -->
     <footer class="footer">
-        <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

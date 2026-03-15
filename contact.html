@@ -5,188 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ・アクセス - モダンカフェ</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .contact-page {
-            padding: 60px 0;
-        }
-
-        .contact-page h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #8B4513;
-            margin-bottom: 3rem;
-        }
-
-        .contact-section {
-            margin-bottom: 3rem;
-        }
-
-        .contact-section h2 {
-            font-size: 1.8rem;
-            color: #D2691E;
-            border-bottom: 3px solid #D2691E;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .info-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid #D2691E;
-        }
-
-        .info-card h3 {
-            color: #8B4513;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .info-card p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-        }
-
-        .info-card strong {
-            color: #333;
-        }
-
-        .map-container {
-            margin-top: 2rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .map-placeholder {
-            background: #e0e0e0;
-            padding: 2rem;
-            text-align: center;
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        .form-section {
-            background: #f9f9f9;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-family: inherit;
-            font-size: 1rem;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 150px;
-        }
-
-        .submit-button {
-            background: #D2691E;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-            width: 100%;
-        }
-
-        .submit-button:hover {
-            background: #8B4513;
-        }
-
-        .back-button {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 10px 20px;
-            background: #8B4513;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .back-button:hover {
-            background: #D2691E;
-        }
-
-        .hours-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-
-        .hours-table th,
-        .hours-table td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .hours-table th {
-            background: #D2691E;
-            color: white;
-        }
-
-        .hours-table tr:hover {
-            background: #f5f5f5;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- ナビゲーションバー -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">☕ Modern Cafe</div>
+            <div class="logo"><a href="index.html">Modern Cafe</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
     <!-- コンタクトページコンテンツ -->
-    <div class="container contact-page">
+    <div class="container contact-page section-padding">
         <a href="index.html" class="back-button">← ホームに戻る</a>
         
-        <h1>📍 お問い合わせ・アクセス</h1>
+        <h1>お問い合わせ・アクセス</h1>
 
         <!-- 基本情報 -->
         <div class="contact-section">
-            <h2>📌 店舗情報</h2>
+            <h2><i class="fas fa-map-marker-alt"></i> 店舗情報</h2>
             <div class="info-grid">
                 <div class="info-card">
-                    <h3>🏢 住所</h3>
+                    <h3>住所</h3>
                     <p>
                         <strong>〒150-0001</strong><br>
                         東京都渋谷区モダン1-1-1<br>
@@ -194,14 +45,14 @@
                     </p>
                 </div>
                 <div class="info-card">
-                    <h3>📞 電話</h3>
+                    <h3>電話</h3>
                     <p>
                         <strong>03-XXXX-XXXX</strong><br>
                         営業時間内のお問い合わせをお願いします。
                     </p>
                 </div>
                 <div class="info-card">
-                    <h3>📧 メール</h3>
+                    <h3>メール</h3>
                     <p>
                         <strong>info@modern-cafe.jp</strong><br>
                         24時間受け付けています。<br>
@@ -213,7 +64,7 @@
 
         <!-- 営業時間 -->
         <div class="contact-section">
-            <h2>⏰ 営業時間</h2>
+            <h2><i class="fas fa-clock"></i> 営業時間</h2>
             <div class="info-card">
                 <table class="hours-table">
                     <thead>
@@ -245,7 +96,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <p style="margin-top: 1rem; color: #666;">
+                <p class="note">
                     ※ 年末年始・ゴールデンウィーク・お盆は営業時間が異なる場合があります。<br>
                     ※ 貸切のご相談も承っております。
                 </p>
@@ -254,14 +105,14 @@
 
         <!-- アクセス -->
         <div class="contact-section">
-            <h2>🚇 アクセス</h2>
+            <h2><i class="fas fa-train"></i> アクセス</h2>
             <div class="info-card">
                 <h3>電車でのアクセス</h3>
                 <p>
                     <strong>渋谷駅</strong>から徒歩5分<br>
                     JR山手線・東京メトロ銀座線・半蔵門線・副都心線
                 </p>
-                <h3 style="margin-top: 1rem;">駐車場</h3>
+                <h3>駐車場</h3>
                 <p>
                     申し訳ございません。<br>
                     当店には駐車場がございません。<br>
@@ -272,7 +123,7 @@
             <!-- 地図プレースホルダー -->
             <div class="map-container">
                 <div class="map-placeholder">
-                    🗺️ 地図はここに表示されます<br>
+                    <i class="fas fa-map"></i> 地図はここに表示されます<br>
                     <small>（実装予定）</small>
                 </div>
             </div>
@@ -280,7 +131,7 @@
 
         <!-- お問い合わせフォーム -->
         <div class="contact-section">
-            <h2>💬 お問い合わせフォーム</h2>
+            <h2><i class="fas fa-envelope"></i> お問い合わせフォーム</h2>
             <div class="form-section">
                 <form>
                     <div class="form-group">
@@ -310,35 +161,24 @@
 
                     <button type="submit" class="submit-button">送信する</button>
                 </form>
-                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                <p class="note">
                     ※ 送信後、確認メールをお送りします。<br>
                     ※ 営業時間内に返信させていただきます。
                 </p>
             </div>
         </div>
-
-        <!-- SNS -->
-        <div class="contact-section">
-            <h2>📱 SNS</h2>
-            <div class="info-card">
-                <p>
-                    最新情報やお得なキャンペーン情報は、<br>
-                    SNSでも配信しています！
-                </p>
-                <p style="margin-top: 1rem;">
-                    <strong>Instagram:</strong> @modern_cafe_shibuya<br>
-                    <strong>Twitter:</strong> @modern_cafe_jp<br>
-                    <strong>Facebook:</strong> Modern Cafe Shibuya
-                </p>
-            </div>
-        </div>
-
-        <a href="index.html" class="back-button">← ホームに戻る</a>
     </div>
 
     <!-- フッター -->
     <footer class="footer">
-        <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>&copy; 2024 Modern Cafe. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
